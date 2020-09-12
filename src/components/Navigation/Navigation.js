@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { Button } from 'react';
+import { Link, Switch } from 'react-router-dom';
 
 const Navigation = () => {
+    let links = (
+        <span>
+            <li>
+                <Link to='/Login'>Log In</Link>
+            </li>
+            <li>
+                <Link to='/Register'>Sign Up</Link>
+            </li>
+        </span>
+    );
+
 	return (
-		<nav style={{ display: 'flex', justifyContent: 'flex-start' }}>
-			<p>Logo Here</p>
-			<p>Log In</p>
-			<p>Sign Up</p>
+		<nav className="navbar" >
+            <div className="logo">
+			    <p>Logo Here</p>
+            </div>
+            {links}
 		</nav>
 	);
 };
