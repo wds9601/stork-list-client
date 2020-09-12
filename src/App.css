@@ -14,24 +14,27 @@
   color: white;
 }
 
-.nav-link:hover  {
-  cursor: pointer;
+.navbar span {
+  width: 25vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: white;
 }
 
 .logo {
-  position: absolute;
+  /* position: absolute; */
   left: 5vw;
   font-size: 2em;
 }
 
-
-
-/* .login {
-  margin-right: 2vw;
-  font-size: 1.5em;
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
 }
-
-.signup {
-  margin-right: 2vw;
-  font-size: 1.5em;
-} */

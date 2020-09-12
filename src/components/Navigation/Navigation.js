@@ -1,22 +1,23 @@
-import React, { Button } from 'react';
+import React from 'react';
 import { Link, Switch } from 'react-router-dom';
+// import { Button } from 'reactstrap';
 
 const Navigation = () => {
     let links = (
         <span>
-            <li>
+            <button className="btn btn-primary">
                 <Link to='/Login'>Log In</Link>
-            </li>
-            <li>
+            </button>
+            <button className="btn btn-primary">
                 <Link to='/Register'>Sign Up</Link>
-            </li>
+            </button>
         </span>
     );
 
 	return (
 		<nav className="navbar" >
             <div className="logo">
-			    <p>Logo Here</p>
+                <p>Logo Here</p>
             </div>
             {links}
 		</nav>
